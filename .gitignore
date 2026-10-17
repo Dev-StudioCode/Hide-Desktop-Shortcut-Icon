@@ -1,0 +1,22 @@
+# Windows OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE and Editor files
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Build & compiled outputs
+*.obj
+*.o
+*.dll
+*.exe
+*.pdb
+
+# Legacy / Non-open-source assets (obsoleted by in-memory Windhawk mod)
+Blank_shortcut_overlay.reg
+blank.ico
