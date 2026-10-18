@@ -105,7 +105,7 @@ The mod works out of the box with zero configuration. If you wish to use a custo
 
 ## 👏 Credits & Acknowledgements
 
-* Credit to the **Hide Desktop Icon Text and Shortcut Arrows** mod (`hide-desktop-icon-text`) by **m417z** for the transparent GDI icon synthesis and system image list overlay replacement approach.
+* Credit to the **Hide Desktop Icon Text and Shortcut Arrows** mod (`hide-desktop-icon-text`) by **kivsak** for the transparent GDI icon synthesis and system image list overlay replacement approach.
 * This mod provides a dedicated, focused implementation featuring clean in-place icon replacement (no image slot leaks), instant reversibility on unload without restarting Explorer, and custom overlay icon support.
 
 ---
