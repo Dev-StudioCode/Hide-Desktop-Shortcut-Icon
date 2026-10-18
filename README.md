@@ -84,10 +84,10 @@ The mod works out of the box with zero configuration. If you wish to use a custo
 
 ## 📋 Requirements & Compatibility
 
-- **Operating System**: Windows 10 (all editions) or Windows 11 (all editions, including 22H2, 23H2, 24H2)
-- **Architecture**: `x86-64` (64-bit)
-- **Host Software**: [Windhawk](https://windhawk.net/)
-- **Dependencies**: None (Uses standard Windows APIs: `ole32`, `shlwapi`, `gdi32`, `comctl32`)
+- **Operating System**: Windows 10 & Windows 11 (x86, x86-64, ARM64)
+- **Scope**: Modifies the system image lists of `explorer.exe` (Desktop & File Explorer). Common Open/Save file dialogs hosted inside other third-party application processes maintain separate process image lists and will display stock arrows.
+- **Host Software**: [Windhawk](https://windhawk.net/) (v1.4 or newer)
+- **Dependencies**: None (Uses standard Windows APIs: `gdi32`, `shell32`, `user32`)
 
 ---
 
@@ -103,6 +103,14 @@ The mod works out of the box with zero configuration. If you wish to use a custo
 
 ---
 
+## 👏 Credits & Acknowledgements
+
+* Credit to the **Hide Desktop Icon Text and Shortcut Arrows** mod (`hide-desktop-icon-text`) by **m417z** for the transparent GDI icon synthesis and system image list overlay replacement approach.
+* This mod provides a dedicated, focused implementation featuring clean in-place icon replacement (no image slot leaks), instant reversibility on unload without restarting Explorer, and custom overlay icon support.
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
