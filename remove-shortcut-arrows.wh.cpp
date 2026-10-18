@@ -2,7 +2,7 @@
 // @id              remove-shortcut-arrows
 // @name            Remove Shortcut Arrow Overlays
 // @description     Removes shortcut arrow overlays from desktop and File Explorer icons cleanly in memory.
-// @version         1.0.0
+// @version         1.0.2
 // @author          Dev-StudioCode
 // @github          https://github.com/Dev-StudioCode
 // @include         explorer.exe
