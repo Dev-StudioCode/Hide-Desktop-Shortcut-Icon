@@ -1,7 +1,8 @@
 // ==WindhawkMod==
 // @id              remove-shortcut-arrows
 // @name            Remove Shortcut Arrow Overlays
-// @description     Removes shortcut arrow overlays from desktop and File Explorer icons cleanly in memory.
+// @description     Removes shortcut arrow overlays from desktop and File
+// Explorer icons cleanly in memory.
 // @version         1.0.0
 // @author          Dev-StudioCode
 // @github          https://github.com/Dev-StudioCode
@@ -27,14 +28,15 @@ require copying files into `C:\Windows\System32`.
 * **Zero Dependencies**: Generates a 100% transparent icon dynamically in
 memory. No external `.ico` files are needed.
 * **Instant Reversibility**: Automatically restores the original Windows
-shortcut arrows when the mod is disabled or unloaded without an Explorer restart.
+shortcut arrows when the mod is disabled or unloaded without an Explorer
+restart.
 * **Optional Custom Icon**: Allows using a custom badge or icon instead of a
 completely transparent one.
 
 ### Scope & Process Behavior
-* System image lists are per-process, so this mod targets `explorer.exe` (Desktop
-and File Explorer). Shell Open/Save dialogs hosted inside other application
-processes retain their separate process image lists.
+* System image lists are per-process, so this mod targets `explorer.exe`
+(Desktop and File Explorer). Shell Open/Save dialogs hosted inside other
+application processes retain their separate process image lists.
 
 ### Credits
 * Credit to the **Hide Desktop Icon Text and Shortcut Arrows** mod
@@ -47,7 +49,9 @@ shell image list technique.
 /*
 - custom_icon_path: ""
   $name: Custom Overlay Icon Path (Optional)
-  $description: Leave empty for fully transparent arrows. To use a custom badge, specify the path to a .ico file with artwork in the bottom-left corner and the rest transparent.
+  $description: Leave empty for fully transparent arrows. To use a custom badge,
+specify the path to a .ico file with artwork in the bottom-left corner and the
+rest transparent.
 */
 // ==/WindhawkModSettings==
 
@@ -187,7 +191,8 @@ static void HideShortcutOverlay() {
 static void RestoreShortcutOverlay() {
   // Restore in reverse order so lists returned for multiple SHIL sizes restore
   // properly
-  for (auto it = g_backupOverlays.rbegin(); it != g_backupOverlays.rend(); ++it) {
+  for (auto it = g_backupOverlays.rbegin(); it != g_backupOverlays.rend();
+       ++it) {
     IImageList *piml = nullptr;
     if (SUCCEEDED(SHGetImageList(it->shil, g_iidImageList, (void **)&piml)) &&
         piml) {
@@ -237,8 +242,7 @@ static void RefreshDesktopAndExplorer() {
   if (g_overlayImageIndex >= 0) {
     SHChangeNotify(
         SHCNE_UPDATEIMAGE, SHCNF_DWORD | SHCNF_FLUSH, nullptr,
-        reinterpret_cast<LPCVOID>(
-            static_cast<ULONG_PTR>(g_overlayImageIndex)));
+        reinterpret_cast<LPCVOID>(static_cast<ULONG_PTR>(g_overlayImageIndex)));
   }
   RefreshDesktop();
 }
