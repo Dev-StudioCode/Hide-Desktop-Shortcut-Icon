@@ -20,3 +20,8 @@ $RECYCLE.BIN/
 # Legacy / Non-open-source assets (obsoleted by in-memory Windhawk mod)
 Blank_shortcut_overlay.reg
 blank.ico
+WINDHAWK_MOD_MASTER_GUIDE.md
+ai review.md
+v1.cpp
+In windhalk.cpp
+Restore_Default_Shortcut_Arrow.reg
