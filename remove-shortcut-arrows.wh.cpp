@@ -1,7 +1,7 @@
 // ==WindhawkMod==
 // @id              remove-shortcut-arrows
-// @name            Remove Shortcut Arrow Overlays
-// @description     Removes shortcut arrow overlays from desktop and File Explorer icons cleanly in memory.
+// @name            Remove Shortcut Arrow Icons
+// @description     Removes shortcut arrow icons from desktop and File Explorer cleanly in memory.
 // @version         2.0.0
 // @author          Dev-StudioCode
 // @github          https://github.com/Dev-StudioCode
@@ -11,9 +11,9 @@
 
 // ==WindhawkModReadme==
 /*
-# Remove Shortcut Arrow Overlays
+# Remove Shortcut Arrow Icons
 
-Removes shortcut arrow overlays from desktop and File Explorer icons cleanly in memory without modifying the Windows Registry.
+Removes shortcut arrow icons from desktop and File Explorer cleanly in memory without modifying the Windows Registry.
 
 ### Before and After
 
@@ -25,14 +25,14 @@ Removes shortcut arrow overlays from desktop and File Explorer icons cleanly in 
 * **Zero Registry Modifications**: Operates purely in-memory, leaving your registry keys untouched.
 * **No Black Squares or Artifacts**: Immune to the black box glitches caused by legacy Shell Icons registry hacks.
 * **Instant Toggle**: Applies immediately on load and restores original shortcut arrows when unloaded.
-* **Custom Badge Support**: Optional setting to supply your own custom overlay icon instead of a transparent overlay.
+* **Custom Badge Support**: Optional setting to supply your own custom icon badge instead of a transparent icon.
 */
 // ==/WindhawkModReadme==
 
 // ==WindhawkModSettings==
 /*
 - custom_icon_path: ""
-  $name: Custom Overlay Icon Path (Optional)
+  $name: Custom Shortcut Icon Path (Optional)
   $description: Leave empty for fully transparent arrows. To use a custom badge, specify the path to a .ico file with artwork in the bottom-left corner and the rest transparent.
 */
 // ==/WindhawkModSettings==

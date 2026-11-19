@@ -1,11 +1,11 @@
-# Remove Shortcut Arrow Overlays (Windhawk Mod)
+# Remove Shortcut Arrow Icons (Windhawk Mod)
 
 [![Windhawk Mod](https://img.shields.io/badge/Windhawk-Mod-blue.svg)](https://windhawk.net/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%20Windows%2011-0078D6.svg)](https://microsoft.com/windows)
 [![Architecture](https://img.shields.io/badge/Architecture-x86--64-brightgreen.svg)](#requirements)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A clean, modern [Windhawk](https://windhawk.net/) mod that removes the shortcut arrow overlay from desktop and File Explorer icons in Windows. 
+A clean, modern [Windhawk](https://windhawk.net/) mod that removes shortcut arrow icons from desktop and File Explorer in Windows. 
 
 Unlike traditional methods that rely on Windows Registry hacks, this mod dynamically operates directly in memory via the Windows Shell Image List APIs, eliminating visual glitches like the infamous black square artifact.
 
@@ -35,7 +35,7 @@ For years, the standard way to hide shortcut arrows involved creating a registry
 | **Black Box / Black Square Bug** | ❌ Frequent after updates/high-DPI | 🟢 **Immune (proper 32-bit ARGB)** |
 | **Reversibility** | ⚠️ Re-edit registry & restart Explorer | 🟢 **Instant toggle via Windhawk UI** |
 | **Multi-Resolution / High-DPI** | ❌ Often renders improperly scaled | 🟢 **Handles all icon size lists** |
-| **Custom Overlays Support** | ❌ Difficult to configure | 🟢 **Supported via Mod Settings** |
+| **Custom Icon Badge Support** | ❌ Difficult to configure | 🟢 **Supported via Mod Settings** |
 
 ---
 
@@ -80,9 +80,9 @@ For years, the standard way to hide shortcut arrows involved creating a registry
 
 The mod works out of the box with zero configuration. If you wish to use a custom icon instead of an invisible overlay:
 
-1. Open Windhawk and click on **Remove Shortcut Arrow Overlays**.
+1. Open Windhawk and click on **Remove Shortcut Arrow Icons**.
 2. Switch to the **Settings** tab.
-3. In the **Custom Overlay Icon Path** field, enter the full path to a `.ico` file:
+3. In the **Custom Shortcut Icon Path** field, enter the full path to a `.ico` file:
    ```text
    C:\Icons\custom-arrow.ico
    ```
