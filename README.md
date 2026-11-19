@@ -11,6 +11,14 @@ Unlike traditional methods that rely on Windows Registry hacks, this mod dynamic
 
 ---
 
+### Before and After
+
+| Default Windows (With Arrows) | Clean Desktop (With Mod) |
+| :---: | :---: |
+| ![Before](assets/before.png) | ![After](assets/after.png) |
+
+---
+
 ## 🌟 Why This Mod?
 
 For years, the standard way to hide shortcut arrows involved creating a registry key under `Shell Icons` pointing to a blank `.ico` file. While popular, this legacy registry method is notorious for:
@@ -36,7 +44,7 @@ For years, the standard way to hide shortcut arrows involved creating a registry
 - **Zero Registry Tampering**: Operates purely in-memory within `explorer.exe`. Your registry remains clean and untouched.
 - **Dynamic In-Memory Synthesis**: Generates a 100% transparent 32-bit ARGB icon directly in RAM using Win32 GDI. No external `.ico` files are needed.
 - **All Shell Icon Sizes Handled**: Targets all system image list sizes (`SHIL_LARGE`, `SHIL_SMALL`, `SHIL_EXTRALARGE`, `SHIL_SYSSMALL`, `SHIL_JUMBO`), ensuring flawless display across all view modes and DPI scales.
-- **Instant Activation & Reversibility**: Instantly applies when enabled and cleanly restores original Windows shortcut arrows when disabled or unloaded—no Explorer restarts needed.
+- **Instant Activation & Reversibility**: Instantly applies when enabled and cleanly restores original Windows shortcut arrows when disabled or unloaded - no Explorer restarts needed.
 - **Custom Overlay Option**: Prefer a custom subtle badge or tiny dot instead of completely invisible arrows? You can easily set a path to your own custom `.ico` file in the mod settings.
 
 ---
